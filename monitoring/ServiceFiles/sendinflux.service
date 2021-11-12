@@ -1,0 +1,8 @@
+[Unit]
+Description=Set host and send to influx
+
+[Service]
+ExecStart=bash /hamonize_monitoring/sethost.sh
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Set host and send to influx every 10s
+
+[Timer]
+OnUnitActiveSec=10
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
